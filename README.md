@@ -1,1 +1,22 @@
-### Codes will be uploaded in full upon receipt
+## CCGRA: Smart Contract Code Comment Generation with Retrieval-enhanced Approach
+
+### Dependencies
+* python3.8
+* PyTorch
+* transformers
+* fassi
+* nlgeval
+
+### Example Usages
+Retrieval Module
+cd retrieval && python bert_whitening.py && python main.py && cd ..
+
+finetune CodeT5
+cd CodeT5/sh && python run_exp.py --model_tag codet5_base --task summarize --sub_task solity --add_task_prefix && cd ..
+
+eval
+python eval.py
+
+
+
+
