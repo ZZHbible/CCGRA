@@ -1,11 +1,8 @@
+import jsonlines
+import pandas as pd
 from nlgeval import compute_metrics
-from utils import load_dataset,load_dataset_json
-import re
-import sys
 
 import sys, math, re, xml.sax.saxutils
-import subprocess
-import os
 
 # Added to bypass NIST-style pre-processing of hyp and ref files -- wade
 nonorm = 0
