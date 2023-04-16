@@ -19,6 +19,7 @@ parser.add_argument("--type", default='test', type=str, choices=['test', 'train'
 args = parser.parse_args()
 
 base_path='../data/solity'
+target_path='../CodeT5/data/summarize/solity'
 
 train_code_list, train_ast_list, train_nl_list = [], [], []
 with open(os.path.join(base_path,'train_base.jsonl'), 'r') as f:
@@ -127,7 +128,7 @@ if __name__ == '__main__':
     ccgir.index.nprob = 1
     sim_nl_list, c_list, sim_score_list, nl_list = [], [], [], []
     data_list = []
-    with open(os.path.join(base_path,args.type + ".jsonl"), 'w') as f:
+    with open(os.path.join(target_path,args.type + ".jsonl"), 'w') as f:
         for i in range(len(test_code_list)):
             sim_code, sim_ast, sim_nl = ccgir.single_query(test_code_list[i], test_ast_list[i], topK=5)
             f.write(json.dumps({'code': sim_nl.strip() + ' ' + tokenizer.sep_token + ' ' + test_code_list[i].strip(),
