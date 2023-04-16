@@ -1,0 +1,9 @@
+torch
+numpy
+transformers
+jsonlines
+faiss-gpu
+Levenshtein
+git+https://github.com/Maluuba/nlg-eval.git
+tensorboard
+tree_sitter

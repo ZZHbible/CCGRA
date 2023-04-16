@@ -128,6 +128,8 @@ if __name__ == '__main__':
     ccgir.index.nprob = 1
     sim_nl_list, c_list, sim_score_list, nl_list = [], [], [], []
     data_list = []
+    if not os.path.exists(target_path):
+        os.makedirs(target_path, exist_ok=True)
     with open(os.path.join(target_path,args.type + ".jsonl"), 'w') as f:
         for i in range(len(test_code_list)):
             sim_code, sim_ast, sim_nl = ccgir.single_query(test_code_list[i], test_ast_list[i], topK=5)
