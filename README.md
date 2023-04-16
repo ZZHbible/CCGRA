@@ -1,11 +1,7 @@
 ## CCGRA: Smart Contract Code Comment Generation with Retrieval-enhanced Approach
 
 ### Dependencies
-* python3.8
-* PyTorch
-* transformers
-* fassi
-* nlgeval
+pip install -r requirements.txt
 
 ### Example Usages
 Retrieval Module
