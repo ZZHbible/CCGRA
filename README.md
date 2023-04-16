@@ -1,7 +1,15 @@
 ## CCGRA: Smart Contract Code Comment Generation with Retrieval-enhanced Approach
 
 ### Dependencies
-pip install -r requirements.txt
+* python3.8
+* torch
+* numpy
+* jsonlines
+* faiss-gpu
+* Levenshtein
+* git+https://github.com/Maluuba/nlg-eval.git
+* tensorboard
+* tree_sitter
 
 ### Example Usages
 Retrieval Module
