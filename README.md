@@ -25,7 +25,7 @@ cd ..
 finetune CodeT5
 ```shell
 cd CodeT5/sh && 
-python run_exp.py --model_tag codet5_base --task summarize --sub_task solity && 
+python run_exp.py --model_tag codet5_base --task summarize --sub_task solidity && 
 cd ..
 ```
 

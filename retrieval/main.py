@@ -18,8 +18,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--type", default='test', type=str, choices=['test', 'train', 'valid'])
 args = parser.parse_args()
 
-base_path='../data/solity'
-target_path='../CodeT5/data/summarize/solity'
+base_path= '../data/solidity'
+target_path='../CodeT5/data/summarize/solidity'
 
 train_code_list, train_ast_list, train_nl_list = [], [], []
 with open(os.path.join(base_path,'train_base.jsonl'), 'r') as f:

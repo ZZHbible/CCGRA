@@ -131,7 +131,7 @@ def run_multi_task_exp(args):
 
 def get_sub_tasks(task):
     if task == 'summarize':
-        sub_tasks = ['ruby', 'javascript', 'go', 'python', 'java', 'php','solity']
+        sub_tasks = ['ruby', 'javascript', 'go', 'python', 'java', 'php','solidity']
     elif task == 'translate':
         sub_tasks = ['java-cs', 'cs-java']
     elif task == 'refine':

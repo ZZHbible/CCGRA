@@ -94,7 +94,7 @@ def main():
     #     for row in f.readlines():
     #         code_list.append(json.loads(row)["code"])
     code_list = []
-    with open('../data/solity/train_base.jsonl', 'r') as f:
+    with open('../data/solidity/train_base.jsonl', 'r') as f:
         for item in jsonlines.Reader(f):
             code_list.append(item['code'])
 

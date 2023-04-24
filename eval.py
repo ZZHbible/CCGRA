@@ -185,7 +185,7 @@ df = pd.DataFrame(nl_list)
 df.to_csv("ans.csv", index=False, header=None)
 
 with open('test_nl.txt','w') as f:
-    with open('data/solity/test.jsonl','r') as f1:
+    with open('data/solidity/test.jsonl', 'r') as f1:
         for row in jsonlines.Reader(f1):
             f.write(row['nl']+'\n')
     
